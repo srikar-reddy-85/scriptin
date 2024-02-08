@@ -1,0 +1,22 @@
+.inbox-container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: relative;
+    top: 100px;
+    height: 400px;
+    overflow-y: auto;
+    border: solid;
+    color: rgba(0, 0, 0);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+
+
+}
+
+@media screen and (width<600px) {
+    .inbox-container {
+        width: fit-content;
+    }
+
+}

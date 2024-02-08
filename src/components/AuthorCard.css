@@ -1,0 +1,25 @@
+.author-card {
+    position: relative;
+    right: 5%;
+    color: rgb(31, 150, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: small;
+}
+
+@media screen and (300px< width<500px) {
+    .author-card {
+        font-size: xx-small;
+        left: 5px;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (width<300px) {
+    .author-card {
+        flex-direction: column;
+    }
+
+}

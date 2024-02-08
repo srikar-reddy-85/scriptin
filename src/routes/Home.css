@@ -1,0 +1,25 @@
+.dialog-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgb(148, 148, 148);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.dialog-box p {
+    font-family: Arvo;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.dialog-box button {
+    font-family: Poppins;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}

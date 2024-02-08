@@ -1,13 +1,23 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Comfortaa:wght@300&family=Dosis&family=Open+Sans:ital,wght@1,300&family=Oxygen:wght@700&family=Permanent+Marker&family=Poppins:wght@300&family=Raleway:wght@300&family=Righteous&family=Roboto+Slab&family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Comfortaa:wght@300&family=Dosis&family=Lato:wght@300&family=Open+Sans:ital,wght@1,300&family=Oxygen:wght@700&family=Permanent+Marker&family=Poppins:wght@300&family=Raleway:wght@300&family=Righteous&family=Roboto+Slab&family=Ubuntu:wght@500&display=swap');
+
+.html {
+    scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
 }

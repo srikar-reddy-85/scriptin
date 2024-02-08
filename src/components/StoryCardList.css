@@ -1,0 +1,247 @@
+.cardcontainer {
+    position: absolute;
+    bottom: -203px;
+    left: 4px;
+    width: -moz-fit-content;
+    width: fit-content;
+    column-gap: 23px;
+    padding: 121px;
+    max-width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    row-gap: 15px;
+
+}
+
+.card {
+    cursor: pointer;
+    width: 370px;
+    height: fit-content;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    -webkit-transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s;
+    opacity: 1;
+    border-radius: 15px;
+    margin: 0px;
+}
+
+.card a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card:hover {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/**
+* THUMB
+**/
+
+.card__thumb {
+    height: 240px;
+    /* height: fit-content; */
+    overflow: hidden;
+    background-color: #000;
+    -webkit-transition: height 0.5s;
+    transition: height 0.5s;
+}
+
+.card__thumb img {
+    width: 100%;
+    display: block;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+}
+
+.card:hover .card__thumb {
+    height: 130px;
+    /* height: fit-content; */
+}
+
+.card:hover .card__thumb img {
+    opacity: 0.6;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+/**
+* card_BODY
+**/
+
+.card__body {
+    position: relative;
+    height: 20px;
+    padding: 20px;
+    -webkit-transition: height 0.5s;
+    transition: height 0.5s;
+}
+
+.card:hover .card__body {
+    height: 130px;
+    overflow-y: auto;
+}
+
+.card__category {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    height: 25px;
+    padding: 0px;
+    background-color: coral;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 25px;
+}
+
+.card__title {
+    margin: 0;
+    padding: 0 0 10px 0;
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card__title:hover {
+    color: orange;
+}
+
+.card__subtitle {
+    margin: 0;
+    padding: 0 0 10px 0;
+    font-size: 19px;
+    color: coral;
+}
+
+.card__description {
+    /* position: absolute; */
+    left: 20px;
+    right: 20px;
+    bottom: 0px;
+    margin: 0;
+    padding: 0;
+    color: #666C74;
+    opacity: 0;
+}
+
+.card:hover .card__description {
+    opacity: 1;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.card__footer {
+    position: absolute;
+    bottom: 12px;
+    left: 20px;
+    right: 20px;
+    font-size: 11px;
+    color: #A3A9A2;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin: -2px 0 0 2px;
+    font-size: 18px;
+}
+
+.icon+.icon {
+    padding-left: 10px;
+}
+
+
+@media screen and (1100px< width<1490px) {
+
+    /* .cardcontainer {
+        bottom: -170px;
+        column-gap: 0;
+        row-gap: 0;
+    } */
+    .cardcontainer {
+        position: absolute;
+        top: -70px;
+        left: 40px;
+        width: -moz-fit-content;
+        width: fit-content;
+        column-gap: 10px;
+        padding: 160px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 88%;
+    }
+
+    .card {
+        margin-top: 0px;
+        transform: scale(0.95);
+    }
+
+}
+
+@media screen and (width<=1100px) {
+    .cardcontainer {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100dvw;
+        padding: 0px;
+        /* justify-content: center; */
+        margin: 0;
+    }
+
+    .card {
+
+        transform: scale(0.95);
+    }
+
+}
+
+.card__upbutton {
+    margin-top: 5px;
+    margin-right: 6px;
+}
+
+.card__downbutton {
+    margin-top: 5px;
+    margin-right: 6px;
+    background-color: rgb(254, 56, 56);
+}
+
+.card__upbutton:hover {
+    margin-right: 6px;
+    background-color: #000;
+    color: #3ecf8e;
+}
+
+.card__downbutton:hover {
+    margin-right: 6px;
+    background-color: #000;
+    color: rgb(254, 56, 56);
+}
+
+.loader {
+    size: 200px;
+    color: #3ecf8e;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+
+}

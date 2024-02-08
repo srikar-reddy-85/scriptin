@@ -1,0 +1,33 @@
+.contact-dialog {
+    position: fixed;
+    height: 100%;
+    top: 56%;
+    height: fit-content;
+    width: fit-content;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: rgba(62, 62, 62, 0.8);
+    padding: 40px;
+    border-radius: 90px;
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.contact-dialog input {
+    width: 500px;
+    height: 100px;
+}
+
+.contact-dialog textarea {
+    resize: none;
+    height: 100px;
+    width: 350px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}

@@ -1,0 +1,32 @@
+/* .image-input {
+    position: relative;
+    bottom: 167px;
+    left: 0;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+} */
+
+/* Add your other styles as needed */
+.custom-file-input-label {
+    position: relative;
+    display: inline-block;
+    top: -157.6px;
+    right: 2px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: none;
+    cursor: pointer;
+    border: 2px solid;
+    border-color: #3ecf8e;
+}
+
+.image-input {
+    display: none;
+    /* Hide the default file input */
+}

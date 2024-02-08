@@ -1,0 +1,63 @@
+.profileform {
+    padding: 20px;
+    width: fit-content;
+    position: relative;
+    top: 80px;
+}
+
+.form-grid {
+    position: relative;
+    top: -160px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.label-input-container {
+    margin: 10px;
+    width: fit-content;
+    color: #3ecf8e;
+}
+
+input {
+    font-family: Comfortaa;
+}
+
+.settings-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.label-profession-container {
+    color: #3ecf8e;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    row-gap: 7px;
+
+}
+
+.navicon {
+    color: #3ecf8e;
+}
+
+.profession {
+    font-family: Comfortaa;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+@media screen and (300px< width<805px) {
+    .settings-container {
+        padding: 0px;
+        /* padding-left: 60px; */
+        flex-direction: column;
+    }
+
+    .inbox {
+        position: relative;
+        bottom: 80px;
+    }
+
+}

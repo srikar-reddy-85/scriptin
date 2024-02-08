@@ -1,0 +1,13 @@
+.storiescontainer {
+    display: flex;
+    overflow-x: hidden;
+}
+
+
+@media screen and (width<830px) {
+    .storiescontainer {
+        flex-direction: column;
+    }
+
+
+}
